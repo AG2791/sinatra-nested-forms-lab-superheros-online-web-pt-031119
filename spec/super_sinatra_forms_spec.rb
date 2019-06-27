@@ -18,8 +18,8 @@ describe App do
   describe 'POST /teams' do
     it 'submits the form' do
       visit '/'
-      fill_in("team[name]", :with => "Team Ruby")
-      fill_in("team[motto]", :with => "We love Ruby!")
+      fill_in("team[team_name]", :with => "Team Ruby")
+      fill_in("team[team_motto]", :with => "We love Ruby!")
       fill_in("member1_name", :with => "Amanda")
       fill_in("member1_power", :with => "Ruby")
       fill_in("member1_bio", :with => "I love Ruby!")
