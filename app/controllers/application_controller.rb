@@ -11,7 +11,7 @@ class App < Sinatra::Base
     
     
     post '/team' do
-     @team_name = params[:team][:name]
+     @team_name = params[:team][:team_name]
     @team_motto = params[:team][:motto]
     @hero_name = []
     @hero_power = []
